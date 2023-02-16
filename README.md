@@ -1,20 +1,17 @@
-# color
-[![Build Status](https://travis-ci.org/joaosoft/color.svg?branch=master)](https://travis-ci.org/joaosoft/color) | [![codecov](https://codecov.io/gh/joaosoft/color/branch/master/graph/badge.svg)](https://codecov.io/gh/joaosoft/color) | [![Go Report Card](https://goreportcard.com/badge/github.com/joaosoft/color)](https://goreportcard.com/report/github.com/joaosoft/color) | [![GoDoc](https://godoc.org/github.com/joaosoft/color?status.svg)](https://godoc.org/github.com/joaosoft/color)
+# slack
+[![Build Status](https://travis-ci.org/joaosoft/slack.svg?branch=master)](https://travis-ci.org/joaosoft/slack) | [![codecov](https://codecov.io/gh/joaosoft/slack/branch/master/graph/badge.svg)](https://codecov.io/gh/joaosoft/slack) | [![Go Report Card](https://goreportcard.com/badge/github.com/joaosoft/slack)](https://goreportcard.com/report/github.com/joaosoft/slack) | [![GoDoc](https://godoc.org/github.com/joaosoft/slack?status.svg)](https://godoc.org/github.com/joaosoft/slack)
 
-A color formatter that allows you to add color on your output.
-The easy way to use the color:
+A slack formatter that allows you to add slack on your output.
+The easy way to use the slack:
 ``` Go
-import log github.com/joaosoft/color
+import log github.com/joaosoft/slack
 
-fmt.Fprintf(os.Stdout, fmt.Sprintf("%s joao", color.WithColor("hello", color.FormatBold, color.ForegroundRed, color.BackgroundCyan)))
 ```
 
 ###### If i miss something or you have something interesting, please be part of this project. Let me know! My contact is at the end.
 
 ## With support for
 * text format
-* foreground color
-* background color
 
 ## Dependecy Management 
 >### Dep
@@ -25,15 +22,15 @@ Project dependencies are managed using Dep. Read more about [Dep](https://github
 
 >### Go
 ```
-go get github.com/joaosoft/color
+go get github.com/joaosoft/slack
 ```
 
 ## Usage 
-This examples are available in the project at [color/examples](https://github.com/joaosoft/color/tree/master/examples)
+This examples are available in the project at [slack/examples](https://github.com/joaosoft/slack/tree/master/examples)
 
 ```go
 func main() {
-	fmt.Fprintf(os.Stdout, fmt.Sprintf("%s joao", color.WithColor("hello", color.FormatBold, color.ForegroundRed, color.BackgroundCyan)))
+	fmt.Fprintf(os.Stdout, fmt.Sprintf("%s joao", slack.WithSlack("hello", slack.FormatBold, slack.ForegroundRed, slack.BackgroundCyan)))
 }
 ```
 
