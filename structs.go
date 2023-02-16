@@ -5,9 +5,8 @@ type Slack struct {
 }
 
 type Config struct {
-	Enabled bool
-	Service string
-	Url     string
+	App string
+	Url string
 }
 
 type SlackMessage struct {

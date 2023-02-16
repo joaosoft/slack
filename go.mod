@@ -1,3 +1,3 @@
-module github.com/joaosoft/color
+module github.com/joaosoft/slack
 
 go 1.18

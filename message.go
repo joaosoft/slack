@@ -21,6 +21,10 @@ type Message struct {
 	occurredAt  *time.Time    `json:"occurred_at"`
 }
 
+func NewMessage() *Message {
+	return &Message{}
+}
+
 func (m *Message) Title(title string) *Message {
 	m.title = title
 	return m

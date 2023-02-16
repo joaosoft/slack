@@ -8,27 +8,15 @@ import (
 	"time"
 )
 
-func New() *Slack {
+func New(config *Config) *Slack {
 	return &Slack{
-		config: &Config{},
+		config: config,
 	}
-}
-
-func (ds *Slack) Init(config *Config) error {
-	if config != nil {
-		ds.config = config
-	}
-
-	return nil
 }
 
 func (s *Slack) Send(msg *Message) error {
-	if !s.config.Enabled {
-		return nil
-	}
-
 	message := SlackMessage{
-		Username: s.config.Service,
+		Username: s.config.App,
 		Text:     NewFormat(""),
 	}
 
