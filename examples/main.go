@@ -15,5 +15,7 @@ func main() {
 		Environment("Environment").
 		Code("Code")
 
-	_ = mySlack.Send(msg)
+	if err := mySlack.Send(msg); err != nil {
+		panic(err)
+	}
 }
